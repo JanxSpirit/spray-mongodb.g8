@@ -13,7 +13,13 @@ object MsgJsonProtocol extends DefaultJsonProtocol {
 }
 
 trait MongoSupport {
-  val mongo = MongoConnection()("msgs")("msgs")
+  val akkaConfig = akka.config.Config.config
+  val mongoHost = akkaConfig.getString("mongodb.host", "localhost")
+  val mongoDb = akkaConfig.getString("mongodb.database", "msgs")
+  val mongoColl = akkaConfig.getString("msgs.collection", "msgs")
+  val mongoPort = akkaConfig.getInt("mongodb.port", 27017)
+
+  val mongo = MongoConnection(mongoHost, mongoPort)(mongoDb)(mongoColl)
 }
 
 trait MsgService extends Directives
