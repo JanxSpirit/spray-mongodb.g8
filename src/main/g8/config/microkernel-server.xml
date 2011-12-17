@@ -7,7 +7,7 @@
 <!-- Documentation of this file format can be found at:              -->
 <!-- http://wiki.eclipse.org/Jetty/Reference/jetty.xml_syntax        -->
 <!--                                                                 -->
-<!-- Additional configuration files are available in $JETTY_HOME/etc -->
+<!-- Additional configuration files are available in \$JETTY_HOME/etc -->
 <!-- and can be mixed in.  For example:                              -->
 <!--   java -jar start.jar etc/jetty.xml etc/jetty-ssl.xml           -->
 <!--                                                                 -->

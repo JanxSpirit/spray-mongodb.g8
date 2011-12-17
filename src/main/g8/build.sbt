@@ -1,8 +1,8 @@
 import AssemblyKeys._
 
-name := $name$
+name := "$name$"
 
-version := $version$
+version := "$version$"
 
 scalaVersion := "2.9.1"
 
