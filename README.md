@@ -1,6 +1,6 @@
 # Spray MongoDB project
 
-[g8](http://github.com/n8han/giter8) template to get a Scalatra web service up and running quickly with MongoDB support using Casbah. The template generates a project that uses SBT 0.11.2. It will not build under 0.7.x or 0.10.x versions of SBT. 
+[g8](http://github.com/n8han/giter8) template to get a Spray web service up and running quickly with MongoDB support using Casbah. The template generates a project that uses SBT 0.11.2. It will not build under 0.7.x or 0.10.x versions of SBT. 
 
 ## Usage
 
