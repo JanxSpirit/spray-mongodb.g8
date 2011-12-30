@@ -1,5 +1,7 @@
 import AssemblyKeys._
 
+import com.typesafe.startscript.StartScriptPlugin
+
 name := "$name$"
 
 version := "$version$"
@@ -9,6 +11,8 @@ scalaVersion := "2.9.1"
 mainClass := Some("JettyLauncher")
 
 seq(webSettings :_*)
+
+seq(StartScriptPlugin.startScriptForClassesSettings: _*)
 
 port in container.Configuration := 8080
 
@@ -35,4 +39,6 @@ resolvers ++= Seq(
   "Web plugin repo" at "http://siasia.github.com/maven2",
   ScalaToolsSnapshots
 )
+
+
 
