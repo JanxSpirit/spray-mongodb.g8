@@ -35,7 +35,7 @@ libraryDependencies ++= Seq(
   )
 
 resolvers ++= Seq(
-  "Akka Repository" at "http://akka.io/repository/",
+  "Akka Repository" at "http://repo.akka.io/releases/",
   "Web plugin repo" at "http://siasia.github.com/maven2",
   ScalaToolsSnapshots
 )
